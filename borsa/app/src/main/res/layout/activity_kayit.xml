@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.kayitActivity">
+
+    <TextView
+        android:id="@+id/txthesapoluştur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YENİ HESAP OLUŞTUR."
+        android:textColor="#D50D0D"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="25sp"/>
+
+
+    
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txthesapoluştur"
+        android:hint=" Email Adresi"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        />
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailText"
+        android:hint=" Parola"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtpassword"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Doğum tarihi"
+
+        />
+
+    <Button
+        android:id="@+id/btnHesapOluştur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black"
+        android:onClick="hesapOluştur"
+        android:text="HESAP OLUŞTUR" />
+
+    <Button
+        android:id="@+id/btnTarihSecme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDate"
+        android:text="Tarih Seçme "
+        android:layout_marginStart="295dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
+
+        />
+
+
+</RelativeLayout>
+
+
